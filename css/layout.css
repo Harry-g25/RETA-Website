@@ -478,6 +478,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-xl);
     transition: right var(--transition);
     overflow-y: auto;
+    z-index: 95;
   }
 
   .nav__list.open {
@@ -541,8 +542,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .header__logo-img {
-    height: 52px;
-    max-width: 55vw;
+    height: auto;
+    max-height: 50px;
+    max-width: 160px;
+  }
+
+  .header__logo {
+    flex-shrink: 1;
+    min-width: 0;
   }
 }
 
@@ -560,8 +567,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .header__logo-img {
-    height: 44px;
-    max-width: 50vw;
+    height: auto;
+    max-height: 40px;
+    max-width: 130px;
   }
 
   .section {
