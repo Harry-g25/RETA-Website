@@ -1,0 +1,148 @@
+/* ========================================
+   RETA Brand Design Tokens
+   ======================================== */
+
+:root {
+  /* Brand Palette */
+  --color-primary: #76BF41;
+  --color-primary-dark: #5a9a30;
+  --color-accent: #0DF205;
+  --color-highlight: #F2E205;
+  --color-olive: #736B02;
+  --color-black: #0D0D0D;
+
+  /* Neutrals */
+  --color-white: #FFFFFF;
+  --color-grey-50: #F8F9FA;
+  --color-grey-100: #F1F3F5;
+  --color-grey-200: #E9ECEF;
+  --color-grey-300: #DEE2E6;
+  --color-grey-400: #ADB5BD;
+  --color-grey-500: #6C757D;
+  --color-grey-600: #495057;
+  --color-grey-700: #343A40;
+  --color-grey-800: #212529;
+
+  /* Semantic */
+  --color-success: #76BF41;
+  --color-error: #DC3545;
+  --color-warning: #F2E205;
+
+  /* Typography */
+  --font-heading: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --fs-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --fs-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --fs-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --fs-md: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --fs-xl: clamp(1.5rem, 1.2rem + 1.5vw, 2rem);
+  --fs-2xl: clamp(1.875rem, 1.4rem + 2.4vw, 2.5rem);
+  --fs-3xl: clamp(2.25rem, 1.6rem + 3.2vw, 3.25rem);
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.6;
+  --lh-loose: 1.8;
+
+  /* Spacing (8px base) */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.5rem;    /* 24px */
+  --space-6: 2rem;      /* 32px */
+  --space-7: 2.5rem;    /* 40px */
+  --space-8: 3rem;      /* 48px */
+  --space-9: 4rem;      /* 64px */
+  --space-10: 5rem;     /* 80px */
+  --space-11: 6rem;     /* 96px */
+  --space-12: 8rem;     /* 128px */
+
+  /* Layout */
+  --max-width: 1200px;
+  --max-width-narrow: 800px;
+  --header-height: 96px;
+  --border-radius-sm: 4px;
+  --border-radius: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.16);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Theme-aware semantic tokens (light mode defaults) */
+  --bg-body: var(--color-white);
+  --bg-surface: var(--color-white);
+  --bg-surface-raised: var(--color-grey-50);
+  --bg-header: var(--color-white);
+  --bg-footer: var(--color-black);
+  --bg-input: var(--color-white);
+
+  --text-primary: var(--color-grey-800);
+  --text-secondary: var(--color-grey-500);
+  --text-heading: var(--color-black);
+  --text-on-dark: var(--color-grey-300);
+
+  --border-color: var(--color-grey-200);
+  --border-color-input: var(--color-grey-300);
+
+  --card-bg: var(--color-white);
+  --card-shadow: var(--shadow);
+  --card-shadow-hover: var(--shadow-lg);
+}
+
+/* ========================================
+   Dark Theme
+   ======================================== */
+[data-theme="dark"] {
+  --bg-body: #111111;
+  --bg-surface: #1a1a1a;
+  --bg-surface-raised: #222222;
+  --bg-header: #1a1a1a;
+  --bg-footer: #111111;
+  --bg-input: #222222;
+
+  --text-primary: #E0E0E0;
+  --text-secondary: #999999;
+  --text-heading: #F5F5F5;
+  --text-on-dark: #BBBBBB;
+
+  --border-color: #333333;
+  --border-color-input: #444444;
+
+  --card-bg: #1e1e1e;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --card-shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  --color-grey-50: #1a1a1a;
+  --color-grey-100: #222222;
+  --color-grey-200: #333333;
+  --color-grey-300: #444444;
+  --color-grey-400: #888888;
+  --color-grey-500: #999999;
+  --color-grey-600: #BBBBBB;
+  --color-grey-700: #DDDDDD;
+  --color-grey-800: #E0E0E0;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
