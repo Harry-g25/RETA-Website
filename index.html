@@ -6,7 +6,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <title>RETA — Renewable Energy Technology Academy | Training Centre in Wales</title>
-  <meta name="description" content="Renewable Energy Technology Academy (RETA) — Wales' specialist training centre for heat pump, solar PV, battery storage and EV charging courses. NICEIC accredited.">
+  <link rel="canonical" href="https://www.reta-training.co.uk/">
+  <meta name="description" content="RETA is Wales' specialist renewable energy training academy. NICEIC-accredited courses in heat pumps, solar PV, battery storage and EV charging. Enrol today.">
 
   <!-- Open Graph -->
   <meta property="og:title" content="RETA — Renewable Energy Technology Academy">
@@ -53,7 +54,10 @@
   <header class="header" role="banner">
     <div class="header__inner">
       <a href="index.html" class="header__logo" aria-label="RETA — Home">
-        <img src="logo.png" alt="RETA — Renewable Energy Technology Academy Ltd" class="header__logo-img">
+        <picture>
+          <source srcset="logo.webp" type="image/webp">
+          <img src="logo.png" alt="RETA — Renewable Energy Technology Academy Ltd" class="header__logo-img">
+        </picture>
       </a>
 
       <button class="theme-toggle" aria-label="Switch to dark mode" type="button">
@@ -325,9 +329,15 @@
     </div>
   </div>
 
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
   <!-- Scripts -->
   <script src="js/nav.js"></script>
   <script src="js/cookie.js"></script>
   <script src="js/theme.js"></script>
+  <script src="js/backtotop.js"></script>
 </body>
 </html>

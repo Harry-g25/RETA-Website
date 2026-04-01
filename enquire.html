@@ -6,7 +6,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <title>Enquire Now — RETA | Renewable Energy Technology Academy</title>
-  <meta name="description" content="Enquire about RETA's renewable energy training courses. Submit your details and our team will be in touch to discuss your training requirements.">
+  <link rel="canonical" href="https://www.reta-training.co.uk/enquire.html">
+  <meta name="description" content="Ready to upskill in renewable energy? Enquire about RETA's next available courses in heat pumps, solar PV, EV charging and more. We'll get back to you quickly.">
 
   <meta property="og:title" content="Enquire Now — RETA">
   <meta property="og:description" content="Get in touch about our accredited renewable energy training courses in Mold, Wales.">
@@ -30,7 +31,10 @@
   <header class="header" role="banner">
     <div class="header__inner">
       <a href="index.html" class="header__logo" aria-label="RETA — Home">
-        <img src="logo.png" alt="RETA — Renewable Energy Technology Academy Ltd" class="header__logo-img">
+        <picture>
+          <source srcset="logo.webp" type="image/webp">
+          <img src="logo.png" alt="RETA — Renewable Energy Technology Academy Ltd" class="header__logo-img">
+        </picture>
       </a>
       <button class="theme-toggle" aria-label="Switch to dark mode" type="button">
             <svg class="theme-toggle__icon--sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -222,9 +226,14 @@
     </div>
   </div>
 
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
   <script src="js/nav.js"></script>
   <script src="js/form.js"></script>
   <script src="js/cookie.js"></script>
   <script src="js/theme.js"></script>
+  <script src="js/backtotop.js"></script>
 </body>
-</html>

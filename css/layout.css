@@ -278,6 +278,47 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: repeat(4, 1fr);
 }
 
+/* --- Back to Top --- */
+.back-to-top {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  z-index: 90;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--border-radius-full);
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity var(--transition), visibility var(--transition), transform var(--transition), background var(--transition-fast);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--color-primary-dark);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+}
+
 /* --- Footer --- */
 .footer {
   background: var(--bg-footer);
@@ -494,6 +535,15 @@ h1, h2, h3, h4, h5, h6 {
   .section__title {
     font-size: var(--fs-xl);
   }
+
+  :root {
+    --header-height: 72px;
+  }
+
+  .header__logo-img {
+    height: 52px;
+    max-width: 55vw;
+  }
 }
 
 @media (max-width: 480px) {
@@ -503,5 +553,18 @@ h1, h2, h3, h4, h5, h6 {
 
   .header__inner {
     padding: 0 var(--space-4);
+  }
+
+  :root {
+    --header-height: 64px;
+  }
+
+  .header__logo-img {
+    height: 44px;
+    max-width: 50vw;
+  }
+
+  .section {
+    padding: var(--space-7) 0;
   }
 }
